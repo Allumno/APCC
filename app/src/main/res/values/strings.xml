@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--    Title of the app    -->
+	<string name="app_name">Hello World</string>
+
+	<!--    Exercise Labels     -->
+	<string name="ex_lang_label">Português</string>
+	<string name="ex_math_label">Matemática</string>
+	<string name="ex_science_label">Ciência</string>
+	<string name="ex_geog_label">Geografia</string>
+
+	<!--    Navigation labels   -->
+	<string name="back_label">Voltar</string>
+	<string name="next_label">Seguinte</string>
+
+	<!--    Confirmation labels -->
+	<string name="ok_label">Ok</string>
+	<string name="cancel_label">Cancelar</string>
+
+	<!--    Miscelaneous labels -->
+	<string name="action_settings">Definições</string>
+	<string name="level_label">"Nível: "</string>
+	<string name="default_level_value">1</string>
+	<string name="default_essay_value">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium pulvinar lectus, nec blandit dolor vestibulum sed. Proin tincidunt nec est at convallis. Cras pretium arcu non porttitor tristique. Nullam."</string>
+	<string name="keyboard_label">"Teclado: "</string>
+
+	<!--    Portuguese exercise labels  -->
+	<string name="theme_label">"Tema: "</string>
+	<string name="ex_lang_instruction_1_label">"Completa o texto: "</string>
+	<string name="ex_lang_instruction_2_label">"Escolhe a palavra correcta: "</string>
+	<string name="ex_lang_instruction_3_label">"Escreve a palavra correcta: "</string>
+	<string name="ex_lang_instruction_4_label">"Escreve um texto sobre o tema proposto: "</string>
+	<string name="default_option_1_value">"Opção 1"</string>
+	<string name="default_option_2_value">"Opção 2"</string>
+	<string name="default_option_3_value">"Opção 3"</string>
+
+
+
+
+
+</resources>
