@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<!--    Title of the app    -->
-	<string name="app_name">Hello World</string>
+	<string name="app_name">APCC</string>
 
 	<!--    Exercise Labels     -->
 	<string name="ex_lang_label">Português</string>
@@ -23,13 +23,17 @@
 	<string name="default_level_value">1</string>
 	<string name="default_essay_value">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium pulvinar lectus, nec blandit dolor vestibulum sed. Proin tincidunt nec est at convallis. Cras pretium arcu non porttitor tristique. Nullam."</string>
 	<string name="keyboard_label">"Teclado: "</string>
+	<string name="swipe_toggle">"Swipe"</string>
+	<string name="path_label">"Directoria Actual: "</string>
+	<string name="current_path">"..."</string>
+	<string name="tree_label">"Conteúdo: "</string>
 
 	<!--    Portuguese exercise labels  -->
 	<string name="theme_label">"Tema: "</string>
+	<string name="theme_sample">"Receita de bolo"</string>
 	<string name="ex_lang_instruction_1_label">"Completa o texto: "</string>
-	<string name="ex_lang_instruction_2_label">"Escolhe a palavra correcta: "</string>
-	<string name="ex_lang_instruction_3_label">"Escreve a palavra correcta: "</string>
-	<string name="ex_lang_instruction_4_label">"Escreve um texto sobre o tema proposto: "</string>
+	<string name="ex_lang_instruction_2_label">"Escolhe a opção correcta: "</string>
+	<string name="ex_lang_instruction_3_label">"Escreve um texto sobre o tema proposto: "</string>
 	<string name="default_option_1_value">"Opção 1"</string>
 	<string name="default_option_2_value">"Opção 2"</string>
 	<string name="default_option_3_value">"Opção 3"</string>
@@ -39,8 +43,10 @@
 	<string name="default_option_7_value">"Opção 7"</string>
 	<string name="default_option_8_value">"Opção 8"</string>
 
+	<string name="ex_query_instruction_1_label">"Questão: "</string>
+	<string name="ex_query_instruction_2_label">"Escolhe a opção correcta: "</string>
+	<string name="default_question">Quem é o maior?</string>
 
-
-
+	<string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

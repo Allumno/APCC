@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/query"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/instruction_1_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/ex_query_instruction_1_label"/>
+
+		<TextView
+			android:id="@+id/question"
+			android:layout_below="@+id/instruction_1_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/default_question"
+			android:textSize="20sp"
+			android:lineSpacingMultiplier="0.9"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/options"
+		android:orientation="vertical"
+		android:layout_below="@+id/query"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/instruction_2_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/ex_query_instruction_2_label"/>
+
+
+		<LinearLayout
+			android:id="@+id/answers"
+			android:layout_below="@+id/instruction_2_label"
+			android:orientation="vertical"
+			android:layout_gravity="fill_horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:id="@+id/opt0"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/default_button"
+				android:text="@string/default_option_1_value"
+				android:gravity="start|center"
+				android:layout_margin="0.5dp"/>
+
+			<Button
+				android:id="@+id/opt1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/default_button"
+				android:text="@string/default_option_2_value"
+				android:gravity="start|center"
+				android:layout_margin="0.5dp"/>
+
+			<Button
+				android:id="@+id/opt2"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/default_button"
+				android:text="@string/default_option_3_value"
+				android:gravity="start|center"
+				android:layout_margin="0.5dp"/>
+
+			<Button
+				android:id="@+id/opt3"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/default_button"
+				android:text="@string/default_option_4_value"
+				android:gravity="start|center"
+				android:layout_margin="0.5dp"/>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

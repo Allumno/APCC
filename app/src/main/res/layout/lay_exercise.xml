@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/layout_exercise"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+	<FrameLayout
+		android:id="@+id/fragment_header"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.10"
+		tools:layout="@layout/fragment_header"/>
+
+	<FrameLayout
+		android:id="@+id/fragment_body"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.80"
+		tools:layout="@layout/fragment_lesson"/>
+
+	<FrameLayout
+		android:id="@+id/fragment_footer"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.1"
+		android:layout_gravity="bottom"
+		tools:layout="@layout/fragment_footer_both"/>
+</LinearLayout>
