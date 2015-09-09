@@ -1,6 +1,6 @@
 package data;
 
-import constants.Layouts;
+import variables.Layouts;
 
 public class GenericData {
 

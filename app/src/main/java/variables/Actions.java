@@ -1,4 +1,4 @@
-package constants;
+package variables;
 
 public enum Actions {
 	//  Button related actions

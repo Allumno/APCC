@@ -6,10 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import alpha.apcc.ExerciseAct;
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Directions;
+import variables.Actions;
+import variables.Directions;
 import items.GroupManager;
 import logic.FooterFragmentLogic;
 

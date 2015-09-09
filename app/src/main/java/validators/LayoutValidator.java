@@ -1,8 +1,8 @@
 package validators;
 
-import constants.DataConstraints;
-import constants.Layouts;
-import constants.ViewTypes;
+import variables.DataConstraints;
+import variables.Layouts;
+import variables.ViewTypes;
 import data.HeaderData;
 import data.ImageQuestionData;
 import data.ImageQuestionTurnData;

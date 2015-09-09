@@ -4,8 +4,8 @@ import android.os.Handler;
 import android.widget.Button;
 
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Directions;
+import variables.Actions;
+import variables.Directions;
 
 public class DirectionButton extends NormalButton {
 	Directions dir;

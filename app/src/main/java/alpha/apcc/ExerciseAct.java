@@ -8,11 +8,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import constants.Actions;
-import constants.Configurations;
-import constants.ExerciseResources;
-import constants.ExercisePersistence;
-import constants.Layouts;
+import variables.Actions;
+import variables.Configurations;
+import variables.ExerciseResources;
+import variables.ExercisePersistence;
+import variables.Layouts;
 import logic.ExerciseLogic;
 
 public class ExerciseAct extends Activity {
@@ -128,8 +128,7 @@ public class ExerciseAct extends Activity {
 	}
 
 	public void onClick(View vi) {
-		if (Configurations.swipeToggle) {
-			System.out.println("Entrei aqui!!!!");
+		if (Configurations.swipeToggle && logic.getHandler() != null) {
 			Message msg = logic.getHandler().obtainMessage(0, Actions.SW_SELECT);
 			logic.getHandler().sendMessage(msg);
 		}

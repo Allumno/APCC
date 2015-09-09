@@ -6,9 +6,9 @@ import android.widget.Button;
 
 import alpha.apcc.ExerciseAct;
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Directions;
-import constants.ExerciseResources;
+import variables.Actions;
+import variables.Directions;
+import variables.ExerciseResources;
 import fragments.FragmentTemplate;
 import items.GroupManager;
 

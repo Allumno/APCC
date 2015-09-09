@@ -1,17 +1,14 @@
 package fragments;
 
 import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.graphics.Bitmap;
 import android.graphics.Point;
-import android.os.Bundle;
 import android.os.Handler;
 import android.view.Display;
 
-import alpha.apcc.ExerciseAct;
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Layouts;
+import variables.Actions;
+import variables.Layouts;
 import items.GroupManager;
 
 public abstract class FragmentTemplate extends Fragment {

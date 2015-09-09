@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import alpha.apcc.R;
-import constants.Actions;
+import variables.Actions;
 import items.GroupManager;
 import logic.HeaderFragmentLogic;
 

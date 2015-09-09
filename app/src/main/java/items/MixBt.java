@@ -2,13 +2,11 @@ package items;
 
 import android.graphics.Bitmap;
 import android.os.Handler;
-import android.os.Message;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Button;
 
-import constants.Actions;
-import constants.MediaType;
+import variables.Actions;
+import variables.MediaType;
 
 public class MixBt implements ItemInterface {
 	protected String id;

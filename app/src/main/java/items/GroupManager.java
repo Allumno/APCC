@@ -5,8 +5,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import constants.Actions;
-import constants.Directions;
+import variables.Actions;
+import variables.Directions;
 
 public class GroupManager {
 	private GroupItems group;

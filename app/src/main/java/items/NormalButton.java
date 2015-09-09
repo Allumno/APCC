@@ -10,8 +10,8 @@ import android.widget.ImageButton;
 import java.io.Serializable;
 
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Configurations;
+import variables.Actions;
+import variables.Configurations;
 
 
 public class NormalButton implements ItemInterface, Serializable {

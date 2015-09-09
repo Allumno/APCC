@@ -10,12 +10,12 @@ import java.util.ArrayList;
 
 import alpha.apcc.ExerciseAct;
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Configurations;
-import constants.Fonts;
-import constants.Messages;
-import constants.ExerciseResources;
-import constants.ToastMessage;
+import variables.Actions;
+import variables.Configurations;
+import variables.Fonts;
+import variables.Messages;
+import variables.ExerciseResources;
+import variables.ToastMessage;
 import data.QuestionData;
 import files.QuestionLoader;
 import files.Reader;

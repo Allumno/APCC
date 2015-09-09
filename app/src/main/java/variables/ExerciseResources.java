@@ -1,16 +1,13 @@
-package constants;
+package variables;
 
 import java.io.File;
 import java.util.HashMap;
 
-import alpha.apcc.APCCapp;
 import data.FileLayout;
 import data.GenericData;
-import data.MetaData;
 import data.MetaDataAssignment;
 import files.FileValidator;
 import files.GenericDataLoader;
-import files.MetaDataLoader;
 import files.Reader;
 import logic.ExerciseFlow;
 

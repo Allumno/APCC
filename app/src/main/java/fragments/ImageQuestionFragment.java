@@ -8,12 +8,9 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import alpha.apcc.R;
-import constants.Actions;
-import constants.ExercisePersistence;
-import constants.ExerciseResources;
-import constants.Layouts;
-import data.ImageTextData;
+import variables.Actions;
+import variables.ExercisePersistence;
+import variables.ExerciseResources;
 import items.GroupManager;
 import logic.ImageQuestionFragmentLogic;
 

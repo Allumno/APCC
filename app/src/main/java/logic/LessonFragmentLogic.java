@@ -1,10 +1,8 @@
 package logic;
 
-import android.app.Fragment;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
-import android.os.Environment;
 import android.os.Handler;
 import android.view.Display;
 import android.view.View;
@@ -15,13 +13,12 @@ import android.widget.TextView;
 
 import java.io.File;
 
-import alpha.apcc.ExerciseAct;
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Directions;
-import constants.ExerciseResources;
-import constants.Fonts;
-import constants.Layouts;
+import variables.Actions;
+import variables.Directions;
+import variables.ExerciseResources;
+import variables.Fonts;
+import variables.Layouts;
 import data.LessonData;
 import files.LessonLoader;
 import files.Reader;

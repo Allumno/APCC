@@ -1,17 +1,10 @@
 package items;
 
-import android.graphics.Bitmap;
 import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-import java.io.Serializable;
-
-import alpha.apcc.R;
-import constants.Actions;
-import constants.Configurations;
+import variables.Actions;
 
 
 public class TextBt extends OptBt {

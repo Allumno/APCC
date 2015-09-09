@@ -1,4 +1,4 @@
-package constants;
+package variables;
 
 import android.graphics.Typeface;
 

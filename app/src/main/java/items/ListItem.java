@@ -6,9 +6,8 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.ListView;
 
-import alpha.apcc.R;
-import constants.Actions;
-import constants.Configurations;
+import variables.Actions;
+import variables.Configurations;
 import logic.FileDialogAdapter;
 
 public class ListItem implements ItemInterface {

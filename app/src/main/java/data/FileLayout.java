@@ -2,7 +2,7 @@ package data;
 
 import java.io.File;
 
-import constants.Layouts;
+import variables.Layouts;
 
 public class FileLayout {
 

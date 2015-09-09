@@ -6,8 +6,8 @@ import android.view.View;
 
 import java.io.Serializable;
 
-import constants.Actions;
-import constants.Configurations;
+import variables.Actions;
+import variables.Configurations;
 
 public class BackgroundView implements ItemInterface, Serializable {
 	protected int id = -1;                  //  ID of the stored button

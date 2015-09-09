@@ -2,16 +2,12 @@ package items;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.graphics.Point;
-import android.hardware.display.DisplayManager;
 import android.os.Handler;
-import android.view.Display;
 import android.view.View;
 import android.widget.ImageButton;
 
-import alpha.apcc.APCCapp;
 import alpha.apcc.R;
-import constants.Actions;
+import variables.Actions;
 
 
 public class ImgBt extends OptBt {

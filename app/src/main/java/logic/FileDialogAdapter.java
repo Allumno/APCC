@@ -12,10 +12,10 @@ import java.util.Collections;
 
 import alpha.apcc.APCCapp;
 import alpha.apcc.R;
-import constants.Hierarchy;
-import constants.Messages;
-import constants.ExerciseResources;
-import constants.ToastMessage;
+import variables.Hierarchy;
+import variables.Messages;
+import variables.ExerciseResources;
+import variables.ToastMessage;
 import data.MetaData;
 import data.MetaDataAssignment;
 

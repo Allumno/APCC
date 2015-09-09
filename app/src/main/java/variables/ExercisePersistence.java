@@ -1,10 +1,7 @@
-package constants;
+package variables;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
-
-import alpha.apcc.R;
 
 public class ExercisePersistence {
 	public Layouts layout = Layouts.UNDEFINED;

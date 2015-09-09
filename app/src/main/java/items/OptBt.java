@@ -3,10 +3,9 @@ package items;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
-import android.widget.Button;
 
 import alpha.apcc.R;
-import constants.Actions;
+import variables.Actions;
 
 
 public abstract class OptBt extends items.Button {

@@ -1,11 +1,9 @@
 package logic;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
 
-import constants.ExercisePersistence;
-import constants.Layouts;
+import variables.ExercisePersistence;
+import variables.Layouts;
 
 public class ExerciseFlow {
 	private boolean set = false;

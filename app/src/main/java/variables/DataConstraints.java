@@ -1,4 +1,4 @@
-package constants;
+package variables;
 
 import java.util.HashMap;
 import java.util.regex.Pattern;

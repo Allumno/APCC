@@ -3,7 +3,7 @@ package data;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import constants.MediaType;
+import variables.MediaType;
 
 public class ImageTextData implements Serializable {
 

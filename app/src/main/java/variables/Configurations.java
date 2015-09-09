@@ -1,4 +1,4 @@
-package constants;
+package variables;
 
 public class Configurations {
 	public final static Layouts INITIAL_SCREEN = Layouts.FILE_DIALOG;

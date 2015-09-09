@@ -1,4 +1,4 @@
-package constants;
+package variables;
 
 /**
  * Created by JLA on 05/03/2015.

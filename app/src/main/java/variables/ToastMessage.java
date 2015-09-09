@@ -1,4 +1,4 @@
-package constants;
+package variables;
 
 import android.content.Context;
 import android.widget.Toast;

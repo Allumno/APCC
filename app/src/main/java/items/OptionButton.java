@@ -5,7 +5,7 @@ import android.os.Message;
 import android.widget.Button;
 
 import alpha.apcc.R;
-import constants.Actions;
+import variables.Actions;
 
 
 public class OptionButton extends NormalButton {

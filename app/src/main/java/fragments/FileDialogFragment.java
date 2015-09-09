@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import java.io.File;
 
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Layouts;
+import variables.Actions;
+import variables.Layouts;
 import items.GroupManager;
 import logic.FileDialogFragmentLogic;
 

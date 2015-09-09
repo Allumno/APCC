@@ -2,16 +2,13 @@ package fragments;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import alpha.apcc.R;
-import constants.Actions;
-import constants.ExercisePersistence;
-import constants.ExerciseResources;
-import constants.Layouts;
+import variables.Actions;
+import variables.ExercisePersistence;
+import variables.ExerciseResources;
 import items.GroupManager;
 import logic.LessonFragmentLogic;
 

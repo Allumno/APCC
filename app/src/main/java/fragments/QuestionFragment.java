@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import alpha.apcc.R;
-import constants.Actions;
-import constants.ExercisePersistence;
-import constants.ExerciseResources;
-import constants.Layouts;
+import variables.Actions;
+import variables.ExercisePersistence;
+import variables.ExerciseResources;
+import variables.Layouts;
 import items.GroupManager;
 import logic.QuestionFragmentLogic;
 

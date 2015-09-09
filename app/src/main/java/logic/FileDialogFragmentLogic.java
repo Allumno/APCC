@@ -2,7 +2,6 @@ package logic;
 
 import android.os.Handler;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -12,10 +11,10 @@ import java.util.ArrayList;
 
 import alpha.apcc.ExerciseAct;
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Configurations;
-import constants.Directions;
-import constants.ExerciseResources;
+import variables.Actions;
+import variables.Configurations;
+import variables.Directions;
+import variables.ExerciseResources;
 import data.MetaData;
 import files.MetaDataLoader;
 import fragments.FragmentTemplate;

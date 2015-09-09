@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Fonts;
+import variables.Actions;
+import variables.Fonts;
 import data.HeaderData;
 import files.HeaderLoader;
 import files.Reader;

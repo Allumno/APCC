@@ -1,13 +1,12 @@
 package items;
 
-import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Configurations;
+import variables.Actions;
+import variables.Configurations;
 
 public abstract class Button implements ItemInterface {
 	protected int id = -1;                              //  ID of the stored button

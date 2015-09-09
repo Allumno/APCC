@@ -7,12 +7,12 @@ import android.os.Handler;
 import android.os.Message;
 
 import alpha.apcc.R;
-import constants.Actions;
-import constants.Configurations;
-import constants.Directions;
-import constants.ExerciseResources;
-import constants.ExercisePersistence;
-import constants.Layouts;
+import variables.Actions;
+import variables.Configurations;
+import variables.Directions;
+import variables.ExerciseResources;
+import variables.ExercisePersistence;
+import variables.Layouts;
 import data.MetaDataAssignment;
 import fragments.FileDialogFragment;
 import fragments.FooterFragment;
