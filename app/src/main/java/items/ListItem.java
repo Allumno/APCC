@@ -31,7 +31,7 @@ public class ListItem implements ItemInterface {
 		setHandler(handler);
 		setFocused(false);
 		setFocusable(true);
-		setListener();
+//		setListener();
 	}
 	
 	/**
@@ -252,15 +252,15 @@ public class ListItem implements ItemInterface {
 		getView().setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if (handler != null) {
-					if (Configurations.swipeToggle) {
-						Message msg = handler.obtainMessage(0, position, 0, Actions.SW_SELECT);
-						handler.sendMessage(msg);
-					} else {
-						System.out.println("#asdasdas###");
-						select();
-					}
+			if (handler != null) {
+				if (Configurations.swipeToggle) {
+					Message msg = handler.obtainMessage(0, position, 0, Actions.SW_SELECT);
+					handler.sendMessage(msg);
+				} else {
+					System.out.println("#asdasdas###");
+					select();
 				}
+			}
 			}
 		});
 	}

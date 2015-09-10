@@ -56,6 +56,7 @@ public class FileDialogAdapter extends ArrayAdapter<String> {
 		}
 
 		Button bt = (Button) rowView.findViewById(R.id.btPath);
+
 		String path = getItem(position);
 		bt.setText(path);
 
@@ -77,6 +78,9 @@ public class FileDialogAdapter extends ArrayAdapter<String> {
 		else {
 			bt.setBackgroundResource(R.drawable.default_button);
 		}
+
+		rowView.setFocusable(false);
+		rowView.setFocusableInTouchMode(false);
 
 		return rowView;
 	}

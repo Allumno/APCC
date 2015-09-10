@@ -100,7 +100,7 @@ public class DataConstraints {
 			return false;
 		}
 
-		return Pattern.matches(Configurations.REGEX, str);
+		return Pattern.matches(Configurations.PATH_REGEX, str);
 	}
 
 	/**

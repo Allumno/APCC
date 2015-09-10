@@ -2,6 +2,7 @@ package logic;
 
 import android.os.Handler;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -77,16 +78,14 @@ public class FileDialogFragmentLogic {
 		adapter = new FileDialogAdapter(data);
 		list_view.setAdapter(adapter);
 
-//		if (Configurations.swipeToggle) {
-//			list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//				@Override
-//				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//					System.out.println("entrei!!!");
-//					group.getItem("li" + position).select();
-//				}
-//			});
-//		}
-//		list_view.setItemsCanFocus(true);
+		list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				if (!Configurations.swipeToggle) {
+					System.out.println("entrei!!!");
+				}
+			}
+		});
 
 		refreshViews();
 	}
@@ -140,7 +139,7 @@ public class FileDialogFragmentLogic {
 			case LIST_ITEM_SELECT:
 				act.logic.stop();
 				if(adapter.incrementDepth(arg1)) {
-					act.changeLay(ExerciseResources.getInstance().getList().getCurrent().getLayout());
+					act.changeLay(ExerciseResources.getList().getCurrent().getLayout());
 					return;
 				}
 				act.logic.swipeSetup();

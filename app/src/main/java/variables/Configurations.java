@@ -17,7 +17,7 @@ public class Configurations {
 
 
 	public final static long START_DELAY = 200;
-	public final static long TIME_STEP = 750;
+	public final static long TIME_STEP = 1500;
 	public static final long TURN_WAIT_TIME = 500;
 	public static boolean swipeToggle = false;
 
@@ -45,5 +45,5 @@ public class Configurations {
 	public static int categories_index = 0;
 	public static int levels_index = 0;
 
-	public static final String REGEX = "([a-zA-Z]:)?(\\\\[a-zA-Z0-9_.-]+)+\\\\?";
+	public static final String PATH_REGEX = "([a-zA-Z]:)?(\\\\[a-zA-Z0-9_.-]+)+\\\\?";
 }

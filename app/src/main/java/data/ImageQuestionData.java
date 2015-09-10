@@ -10,7 +10,6 @@ public class ImageQuestionData {
 	private String author;
 
 	private String type;
-	private String theme;
 
 	protected boolean completed;
 	private ArrayList<ImageQuestionTurnData> turns;
@@ -175,13 +174,5 @@ public class ImageQuestionData {
 
 	public void setType(String type) {
 		this.type = type;
-	}
-
-	public String getTheme() {
-		return theme;
-	}
-
-	public void setTheme(String theme) {
-		this.theme = theme;
 	}
 }

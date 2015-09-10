@@ -79,7 +79,8 @@
 		        android:layout_height="wrap_content"
 		        android:layout_weight="0.85"
 		        android:layout_gravity="center_vertical|top"
-		        android:padding="10dp">
+		        android:padding="10dp"
+			    android:clickable="true">
 		    </ListView>
 		</LinearLayout>
 

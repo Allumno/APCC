@@ -9,7 +9,6 @@ public class LanguageData {
 	private String author;
 
 	private String type;
-	private String theme;
 
 	private String text;
 	private ArrayList<LanguageTurnData> options;
@@ -150,13 +149,5 @@ public class LanguageData {
 
 	public void setType(String type) {
 		this.type = type;
-	}
-
-	public String getTheme() {
-		return theme;
-	}
-
-	public void setTheme(String theme) {
-		this.theme = theme;
 	}
 }
