@@ -79,6 +79,8 @@ public class ExerciseAct extends Activity {
 		ExerciseResources exerciseResources = ExerciseResources.getInstance();
 		ExercisePersistence content = exerciseResources.getList().back();
 
+		//TODO currently content is always != null. Check on this later.
+
 		if (content != null) {
 			changeLay(content.getLayout());
 		}
