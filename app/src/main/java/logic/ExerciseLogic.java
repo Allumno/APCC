@@ -152,7 +152,7 @@ public class ExerciseLogic {
 			runner.stop();
 		}
 
-		runner = new SwipeRunner(strat, handler, Configurations.START_DELAY, Configurations.TIME_STEP);
+		runner = new SwipeRunner(strat, handler, Configurations.START_DELAY, Configurations.time_step);
 	}
 
 	private void headerSetup() {
@@ -223,6 +223,7 @@ public class ExerciseLogic {
 					this.strat = new ImageQuestionGroupStrat();
 					break;
 				case LANGUAGE:
+				case LANGUAGE_Y:
 					bodyBundle.putString("LANGUAGE_PATH",
 							content.getPath());
 					this.body = new LanguageFragment();

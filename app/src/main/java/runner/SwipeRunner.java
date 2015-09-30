@@ -9,6 +9,7 @@ import java.util.Map;
 import variables.Actions;
 import items.GroupItems;
 import items.ItemInterface;
+import variables.Configurations;
 
 
 public class SwipeRunner implements Runnable {
@@ -21,7 +22,6 @@ public class SwipeRunner implements Runnable {
 	private Iterator<Map.Entry<String, ItemInterface>> elements;            //  Iterator of elements in the current group
 
 	private long start_delay;                                               //  Sets the time delay to start the swiping
-	private long time_step;                                                 //  Sets the time interval between each swipe
 	private Handler handler;                                                //  Reference to the main handler to treat UI events
 
 	private boolean pause;                                                  //  Alternates the swipe between pause and play
@@ -42,7 +42,6 @@ public class SwipeRunner implements Runnable {
 		currentItem = null;
 		handler = handle;
 		start_delay = start;
-		time_step = step;
 		pause = false;
 		end = false;
 	}
@@ -61,13 +60,14 @@ public class SwipeRunner implements Runnable {
 		}
 
 		//  Repeats the process while end flag is not activated
-		handler.postDelayed(this, time_step);
+		handler.postDelayed(this, Configurations.time_step);
 	}
 
 	/**
 	 * Starts the swipe thread.
 	 */
 	public void start() {
+		handler.removeCallbacks(this);
 		pause = false;
 		end = false;
 		handler.postDelayed(this, start_delay);

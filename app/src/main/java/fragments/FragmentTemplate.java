@@ -49,7 +49,9 @@ public abstract class FragmentTemplate extends Fragment {
 			case QUESTION:
 				return R.layout.fragment_question;
 			case LANGUAGE:
-				return R.layout.fragment_language;
+				return R.layout.fragment_language_x;
+			case LANGUAGE_Y:
+				return R.layout.fragment_language_x;
 			default:
 				return -1;
 		}

@@ -24,14 +24,15 @@ public class LanguageFragment extends FragmentTemplate {
 
 		if (current.getFile().exists()) {
 			logic = new LanguageFragmentLogic(this, current.getFile());
+			logic.loadData();
 		}
 
-		setLay(Layouts.LANGUAGE);
+		setLay(current.getLayout());
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_language, container, false);
+		View view = inflater.inflate(getLayoutResource(), container, false);
 
 		return view;
 	}

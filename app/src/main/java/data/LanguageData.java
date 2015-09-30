@@ -12,6 +12,7 @@ public class LanguageData {
 
 	private String text;
 	private ArrayList<LanguageTurnData> options;
+	private String imgPath;
 
 	/**
 	 * Empty public constructor.
@@ -32,8 +33,6 @@ public class LanguageData {
 
 	/**
 	 * Sets the text of the exercise.
-	 * @return
-	 *      A string with the text of the exercise.
 	 */
 	public void setText(String text) {
 		this.text = text;
@@ -149,5 +148,13 @@ public class LanguageData {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public String getImgPath() {
+		return imgPath;
+	}
+
+	public void setImgPath(String imgPath) {
+		this.imgPath = imgPath;
 	}
 }

@@ -19,7 +19,7 @@ public class ExerciseAct extends Activity {
 
 	public ExerciseLogic logic = null;
 	public Bundle savedBundle = null;
-
+	private MenuItem swipeBt = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -94,26 +94,52 @@ public class ExerciseAct extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.configuration, menu);
+
+		float time = (float) Configurations.time_step / 1000;
+		swipeBt = menu.findItem(R.id.swipeToggle);
+		swipeBt.setTitle("On " + time + " s");
 		return true;
 	}
 
 	@Override
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
-		if (logic == null) {
-			return super.onMenuItemSelected(featureId, item);
+		switch (item.getItemId()) {
+			case R.id.swipeToggle:
+				if (item.isChecked()) {
+					item.setChecked(false);
+					Configurations.swipeToggle = false;
+					logic.reset();
+					logic.stop();
+				}
+				else {
+					item.setChecked(true);
+					Configurations.swipeToggle = true;
+					logic.start();
+					logic.reset();
+				}
+				break;
+			case R.id.decSwipe:
+				if (swipeBt.isChecked() &&
+						Configurations.time_step > Configurations.MIN_TIME_STEP) {
+					Configurations.time_step -= Configurations.GAP_TIME_STEP;
+				}
+				break;
+			case R.id.incSwipe:
+				if (swipeBt.isChecked() &&
+						Configurations.time_step < Configurations.MAX_TIME_STEP) {
+					Configurations.time_step += Configurations.GAP_TIME_STEP;
+				}
+				break;
+			default:
+				return super.onMenuItemSelected(featureId, item);
 		}
 
-		if (item.isChecked()) {
-			item.setChecked(false);
-			Configurations.swipeToggle = false;
-			logic.stop();
-			logic.reset();
+		if (swipeBt.isChecked()) {
+			float time = (float) Configurations.time_step / 1000;
+			swipeBt.setTitle("On " + time + " s");
 		}
 		else {
-			item.setChecked(true);
-			Configurations.swipeToggle = true;
-			logic.start();
-			logic.reset();
+			swipeBt.setTitle("Off");
 		}
 
 		return true;

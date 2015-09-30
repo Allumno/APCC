@@ -1,9 +1,14 @@
 package logic;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.os.Handler;
 import android.text.Html;
 import android.text.SpannableStringBuilder;
+import android.view.Display;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.File;
@@ -15,6 +20,7 @@ import variables.Actions;
 import variables.Colors;
 import variables.Configurations;
 import variables.Fonts;
+import variables.Layouts;
 import variables.Messages;
 import variables.ExerciseResources;
 import variables.ToastMessage;
@@ -41,6 +47,9 @@ public class LanguageFragmentLogic {
 	private GroupManager group;
 
 	private TextView text_view;
+	private ImageView image_view;
+	private Bitmap bit;
+	private int ratio;
 
 
 	/**
@@ -51,9 +60,6 @@ public class LanguageFragmentLogic {
 	public LanguageFragmentLogic(FragmentTemplate frag) {
 		this.frag = frag;
 		this.path = "language_test.json";
-
-		//  Data loading
-		loadData();
 	}
 
 	/**
@@ -66,9 +72,6 @@ public class LanguageFragmentLogic {
 	public LanguageFragmentLogic(FragmentTemplate frag, String path) {
 		this.frag = frag;
 		this.path = path;
-
-		//  Data loading
-		loadData();
 	}
 
 	/**
@@ -81,9 +84,6 @@ public class LanguageFragmentLogic {
 	public LanguageFragmentLogic(FragmentTemplate frag, File file) {
 		this.frag = frag;
 		this.file = file;
-
-		//  Data loading
-		loadData();
 	}
 
 	/**
@@ -92,6 +92,7 @@ public class LanguageFragmentLogic {
 	public void setup() {
 		this.view = frag.getView();
 		this.act  = (ExerciseAct) frag.getActivity();
+		this.ratio = 1;
 
 		//  Setups the views in the activity
 		viewSetup();
@@ -278,7 +279,7 @@ public class LanguageFragmentLogic {
 	/**
 	 * Responsible for loading the necessary data.
 	 */
-	private void loadData() {
+	public void loadData() {
 		if (file == null) {
 			return;
 		}
@@ -291,6 +292,17 @@ public class LanguageFragmentLogic {
 
 		data = loader.load();
 		reader.close();
+
+		//  Loads and scales down the image of the lesson
+		if (data.getImgPath() != null) {
+			File file = ExerciseResources.getResourceFiles().get(data.getImgPath());
+			bit = BitmapFactory.decodeFile(file.getAbsolutePath());
+
+			if (bit.getHeight() > bit.getWidth()) {
+				ExerciseResources.getList().getCurrent().setLayout(Layouts.LANGUAGE_Y);
+				ExerciseResources.getList().getCurrent().setChanged(true);
+			}
+		}
 	}
 
 	/**
@@ -298,6 +310,8 @@ public class LanguageFragmentLogic {
 	 */
 	private void viewSetup() {
 		//  Buttons and item views setup
+		image_view = (ImageView) view.findViewById(R.id.imageView);
+
 		group = new GroupManager(mainHandler);
 		TextView vi;
 
@@ -338,6 +352,15 @@ public class LanguageFragmentLogic {
 		text_view = (TextView) view.findViewById(R.id.textView);
 		text_view.setTypeface(Fonts.KOMIKA);
 		text_view.setText(data.getText());
+
+		//  Set the image
+		if (bit != null) {
+			bit = scaleDown(bit, ratio);
+			image_view.setImageBitmap(bit);
+		}
+		else {
+			image_view.setVisibility(View.GONE);
+		}
 	}
 
 	/**
@@ -393,5 +416,30 @@ public class LanguageFragmentLogic {
 		}
 
 		nextTurn();
+	}
+
+	/**
+	 * Scales down a given image (by 1/x of the screen height).
+	 * @param image
+	 *      The image to be resized.
+	 * @return
+	 *      The scaled down image.
+	 */
+	private Bitmap scaleDown(Bitmap image, int x) {
+		Display display = frag.getActivity().getWindowManager().getDefaultDisplay();
+		Point point = new Point();
+		display.getSize(point);
+
+		float maxImageSize = point.y/x;
+
+		float ratio = Math.min(
+				maxImageSize / image.getWidth(),
+				maxImageSize / image.getHeight());
+		int width = Math.round(ratio * image.getWidth());
+		int height = Math.round(ratio * image.getHeight());
+
+		Bitmap newBitmap = Bitmap.createScaledBitmap(image, width,
+				height, true);
+		return newBitmap;
 	}
 }

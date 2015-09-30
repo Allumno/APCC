@@ -23,7 +23,10 @@
 	<string name="default_level_value">1</string>
 	<string name="default_essay_value">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium pulvinar lectus, nec blandit dolor vestibulum sed. Proin tincidunt nec est at convallis. Cras pretium arcu non porttitor tristique. Nullam."</string>
 	<string name="keyboard_label">"Teclado: "</string>
-	<string name="swipe_toggle">"Swipe"</string>
+	<string name="swipe_toggle_on">"ON"</string>
+	<string name="swipe_toggle_off">"OFF"</string>
+	<string name="dec_swipe">"-"</string>
+	<string name="inc_swipe">"+"</string>
 	<string name="path_label">"Directoria Actual: "</string>
 	<string name="current_path">"..."</string>
 	<string name="tree_label">"Conteúdo: "</string>

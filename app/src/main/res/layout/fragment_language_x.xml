@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/query"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:padding="10dp"
+		android:layout_weight="0.3">
+
+		<TextView
+			android:id="@+id/ex_lang_instruction_1_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/ex_lang_instruction_1_label"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/ex_lang_instruction_1_label"
+			android:orientation="vertical"
+			android:weightSum="1">
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="0.4"
+				android:padding="2dp"
+				android:layout_gravity="center|top"
+				android:src="@drawable/birthday_cake"/>
+			<TextView
+				android:id="@+id/textView"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="0.4"
+				android:text="@string/default_essay_value"
+				android:textSize="20sp"
+				android:lineSpacingMultiplier="0.9"
+				android:layout_marginBottom="-40dp"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/options"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:padding="10dp"
+		android:layout_weight="0.4">
+
+		<TextView
+			android:id="@+id/ex_lang_instruction_2_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/ex_lang_instruction_2_label"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_below="@+id/ex_lang_instruction_2_label"
+			android:layout_width="fill_parent"
+			android:weightSum="1"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:id="@+id/options_group_1"
+				android:orientation="vertical"
+				android:layout_weight="0.5"
+				android:layout_gravity="fill_horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:id="@+id/opt0"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_1_value"
+					android:layout_margin="0.5dp"/>
+
+				<Button
+					android:id="@+id/opt1"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_2_value"
+					android:layout_margin="0.5dp"/>
+
+				<Button
+					android:id="@+id/opt2"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_3_value"
+					android:layout_margin="0.5dp"/>
+
+				<Button
+					android:id="@+id/opt3"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_4_value"
+					android:layout_margin="0.5dp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/options_group_2"
+				android:layout_weight="0.5"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:id="@+id/opt4"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_5_value"
+					android:layout_margin="0.5dp"/>
+
+				<Button
+					android:id="@+id/opt5"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_6_value"
+					android:layout_margin="0.5dp"/>
+
+
+				<Button
+					android:id="@+id/opt6"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_7_value"
+					android:layout_margin="0.5dp"/>
+
+				<Button
+					android:id="@+id/opt7"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/default_button"
+					android:text="@string/default_option_8_value"
+					android:layout_margin="0.5dp"/>
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

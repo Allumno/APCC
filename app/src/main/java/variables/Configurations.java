@@ -17,9 +17,14 @@ public class Configurations {
 
 
 	public final static long START_DELAY = 200;
-	public final static long TIME_STEP = 1500;
+
 	public static final long TURN_WAIT_TIME = 500;
 	public static boolean swipeToggle = false;
+
+	public final static long MIN_TIME_STEP = 750;
+	public final static long MAX_TIME_STEP = 3000;
+	public final static long GAP_TIME_STEP = 250;
+	public static long time_step = 1500;
 
 	public static final String ASSIGNMENT_TAG = "ASSIGNMENT";
 	public static final String PATH_TAG = "ASSIGNMENT";
