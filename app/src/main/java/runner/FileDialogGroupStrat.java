@@ -7,9 +7,7 @@ import items.GroupItems;
 import items.GroupManager;
 import items.ItemInterface;
 
-public class FileDialogGroupStrat implements SwipeStrategyInterface {
-	private GroupItems main = null;
-	private GroupItems footer = null;
+public class FileDialogGroupStrat extends SwipeStrategyAbstract {
 
 	/**
 	 * Setups the strategy to be used by the swipe thread
@@ -46,25 +44,5 @@ public class FileDialogGroupStrat implements SwipeStrategyInterface {
 		main.addItem("g0", g0);
 		main.addItem("g1", g1);
 		main.addItem("footer", footer);
-	}
-
-	/**
-	 * Returns the main group of the defined strategy
-	 *
-	 * @return An instance of the group to be used by the swipe strategy
-	 */
-	@Override
-	public GroupItems getMainGroup() {
-		return main;
-	}
-
-	/**
-	 * Returns the footer group of the defined strategy
-	 *
-	 * @return An instance of the footer group to be used by the swipe strategy
-	 */
-	@Override
-	public GroupItems getFooterGroup() {
-		return footer;
 	}
 }

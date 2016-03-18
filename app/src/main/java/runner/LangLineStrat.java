@@ -6,9 +6,7 @@ import items.GroupManager;
 /**
  * Created by JLA on 15/01/2015.
  */
-public class LangLineStrat implements SwipeStrategyInterface {
-	private GroupItems main = null;
-	private GroupItems footer = null;
+public class LangLineStrat extends SwipeStrategyAbstract {
 
 	/**
 	 * Setups the strategy to be used by the swipe thread
@@ -38,25 +36,5 @@ public class LangLineStrat implements SwipeStrategyInterface {
 		main.addItem("g0", g1);
 		main.addItem("g1", g2);
 		main.addItem("footer", footer);
-	}
-
-	/**
-	 * Returns the main group of the defined strategy
-	 * @return
-	 *      An instance of the group to be used by the swipe strategy. Null if it was not setup
-	 */
-	@Override
-	public GroupItems getMainGroup() {
-		return main;
-	}
-
-	/**
-	 * Returns the footer group of the defined strategy
-	 *
-	 * @return An instance of the footer group to be used by the swipe strategy
-	 */
-	@Override
-	public GroupItems getFooterGroup() {
-		return footer;
 	}
 }

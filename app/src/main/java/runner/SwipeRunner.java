@@ -34,7 +34,7 @@ public class SwipeRunner implements Runnable {
 	 * @param handle
 	 *      Handler used to communicate with other threads.
 	 */
-	public SwipeRunner(SwipeStrategyInterface strat, Handler handle, long start, long step) {
+	public SwipeRunner(SwipeStrategyAbstract strat, Handler handle, long start, long step) {
 		main = currentGroup = strat.getMainGroup();
 		footerGroup = strat.getFooterGroup();
 		elements = main.getSetIterator();

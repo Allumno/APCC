@@ -3,9 +3,7 @@ package runner;
 import items.GroupItems;
 import items.GroupManager;
 
-public class ImageQuestionGroupStrat implements SwipeStrategyInterface {
-	private GroupItems main = null;
-	private GroupItems footer = null;
+public class ImageQuestionGroupStrat extends SwipeStrategyAbstract {
 
 	/**
 	 * Setups the strategy to be used by the swipe thread
@@ -28,25 +26,5 @@ public class ImageQuestionGroupStrat implements SwipeStrategyInterface {
 		main = new GroupItems(temp.getHandler());
 		main.addItem("g0",g0);
 		main.addItem("footer", footer);
-	}
-
-	/**
-	 * Returns the main group of the defined strategy
-	 *
-	 * @return An instance of the group to be used by the swipe strategy
-	 */
-	@Override
-	public GroupItems getMainGroup() {
-		return main;
-	}
-
-	/**
-	 * Returns the footer group of the defined strategy
-	 *
-	 * @return An instance of the footer group to be used by the swipe strategy
-	 */
-	@Override
-	public GroupItems getFooterGroup() {
-		return footer;
 	}
 }

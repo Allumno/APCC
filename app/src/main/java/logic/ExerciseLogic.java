@@ -30,10 +30,10 @@ import runner.LangUnitStrat;
 import runner.LessonUnitStrat;
 import runner.QuestionLineStrat;
 import runner.SwipeRunner;
-import runner.SwipeStrategyInterface;
+import runner.SwipeStrategyAbstract;
 
 public class ExerciseLogic {
-	protected SwipeStrategyInterface strat;
+	protected SwipeStrategyAbstract strat;
 	protected SwipeRunner runner;
 	protected Handler handler;
 
