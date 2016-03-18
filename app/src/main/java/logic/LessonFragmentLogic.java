@@ -22,7 +22,7 @@ import variables.Layouts;
 import data.LessonData;
 import files.LessonLoader;
 import files.Reader;
-import fragments.FragmentTemplate;
+import fragments.common.FragmentTemplate;
 import items.GroupManager;
 
 public class LessonFragmentLogic {

@@ -19,7 +19,7 @@ import variables.ToastMessage;
 import data.QuestionData;
 import files.QuestionLoader;
 import files.Reader;
-import fragments.FragmentTemplate;
+import fragments.common.FragmentTemplate;
 import items.GroupManager;
 import items.OptionButton;
 

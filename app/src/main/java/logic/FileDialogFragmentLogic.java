@@ -18,7 +18,7 @@ import variables.Directions;
 import variables.ExerciseResources;
 import data.MetaData;
 import files.MetaDataLoader;
-import fragments.FragmentTemplate;
+import fragments.common.FragmentTemplate;
 import items.GroupManager;
 import items.ListItem;
 
@@ -68,9 +68,6 @@ public class FileDialogFragmentLogic {
 	 * Views setup.
 	 */
 	public void viewSetup() {
-//		dir_view        = (TextView)    view.findViewById(R.id.currentPathView);
-//		up_button       = (Button)      view.findViewById(R.id.up_button);
-//		down_button     = (Button)      view.findViewById(R.id.down_button);
 		left_button     = (Button)      view.findViewById(R.id.left_button);
 		list_view       = (ListView)    view.findViewById(R.id.pathListView);
 

@@ -27,7 +27,7 @@ import data.ImageQuestionData;
 import data.ImageTextData;
 import files.ImageQuestionLoader;
 import files.Reader;
-import fragments.FragmentTemplate;
+import fragments.common.FragmentTemplate;
 import items.GroupManager;
 import items.MixBt;
 

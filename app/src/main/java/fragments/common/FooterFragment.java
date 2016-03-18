@@ -1,4 +1,4 @@
-package fragments;
+package fragments.common;
 
 import android.os.Bundle;
 import android.os.Handler;

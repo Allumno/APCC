@@ -1,4 +1,4 @@
-package fragments;
+package fragments.screens;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import fragments.common.FragmentTemplate;
 import variables.Actions;
 import variables.ExercisePersistence;
 import variables.ExerciseResources;

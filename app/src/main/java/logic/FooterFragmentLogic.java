@@ -9,7 +9,7 @@ import alpha.apcc.R;
 import variables.Actions;
 import variables.Directions;
 import variables.ExerciseResources;
-import fragments.FragmentTemplate;
+import fragments.common.FragmentTemplate;
 import items.GroupManager;
 
 public class FooterFragmentLogic {

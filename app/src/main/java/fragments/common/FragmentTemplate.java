@@ -1,4 +1,4 @@
-package fragments;
+package fragments.common;
 
 import android.app.Fragment;
 import android.graphics.Bitmap;
@@ -36,8 +36,6 @@ public abstract class FragmentTemplate extends Fragment {
 		switch (lay) {
 			case HEADER:
 				return R.layout.fragment_header;
-			case FILE_DIALOG:
-				return R.layout.fragment_file_dialog;
 			case LESSON:
 				return R.layout.fragment_lesson;
 			case LESSON_Y:
@@ -52,8 +50,9 @@ public abstract class FragmentTemplate extends Fragment {
 				return R.layout.fragment_language_x;
 			case LANGUAGE_Y:
 				return R.layout.fragment_language_x;
+            case FILE_DIALOG:
 			default:
-				return -1;
+                return R.layout.fragment_file_dialog;
 		}
 	}
 

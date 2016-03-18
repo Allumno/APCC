@@ -27,7 +27,7 @@ import variables.ToastMessage;
 import data.LanguageData;
 import files.LanguageLoader;
 import files.Reader;
-import fragments.FragmentTemplate;
+import fragments.common.FragmentTemplate;
 import items.GroupManager;
 import items.OptionButton;
 

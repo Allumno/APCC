@@ -1,4 +1,4 @@
-package fragments;
+package fragments.screens;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -6,11 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import alpha.apcc.R;
+import fragments.common.FragmentTemplate;
 import variables.Actions;
 import variables.ExercisePersistence;
 import variables.ExerciseResources;
-import variables.Layouts;
 import items.GroupManager;
 import logic.LanguageFragmentLogic;
 

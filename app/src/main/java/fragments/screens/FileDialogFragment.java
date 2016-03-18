@@ -1,39 +1,35 @@
-package fragments;
+package fragments.screens;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.ArrayList;
+import java.io.File;
 
 import alpha.apcc.R;
+import fragments.common.FragmentTemplate;
 import variables.Actions;
-import variables.ExercisePersistence;
-import variables.ExerciseResources;
 import variables.Layouts;
 import items.GroupManager;
-import logic.QuestionFragmentLogic;
+import logic.FileDialogFragmentLogic;
 
-public class QuestionFragment extends FragmentTemplate {
-	private int turn = 0;
-	private ArrayList<String> selected = null;
-	private QuestionFragmentLogic logic;
+public class FileDialogFragment extends FragmentTemplate {
+	private FileDialogFragmentLogic logic;
+	private File file;
 
-	public QuestionFragment() {
-		ExercisePersistence current = ExerciseResources.getList().getCurrent();
-
-		if (current.getFile().exists()) {
-			logic = new QuestionFragmentLogic(this, current.getFile());
-		}
-
-		setLay(Layouts.QUESTION);
+	public FileDialogFragment() {
+		file = Environment.getExternalStorageDirectory();
+		logic = new FileDialogFragmentLogic(this);
+		setLay(Layouts.FILE_DIALOG);
 	}
+
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_question, container, false);
+		View view = inflater.inflate(getLayoutResource(), container, false);
 
 		return view;
 	}
@@ -43,8 +39,7 @@ public class QuestionFragment extends FragmentTemplate {
 		super.onSaveInstanceState(outState);
 
 		outState.putSerializable("LAYOUT", getLay());
-		outState.putInt("QUESTION_TURN", logic.getTurn());
-		outState.putStringArrayList("QUESTION_SELECTED", logic.getSelected());
+		outState.putSerializable("FILEDIALOG_FILE", file);
 	}
 
 	@Override
@@ -54,12 +49,10 @@ public class QuestionFragment extends FragmentTemplate {
 
 		//  Loads saved data
 		if (savedInstanceState == null) {
-			turn        = getArguments().getInt("QUESTION_TURN", 0);
-			selected    = getArguments().getStringArrayList("QUESTION_SELECTED");
+			file        = (File) getArguments().getSerializable("FILEDIALOG_FILE");
 		}
 		else {
-			turn        = savedInstanceState.getInt("QUESTION_TURN", 0);
-			selected    = savedInstanceState.getStringArrayList("QUESTION_SELECTED");
+			file        = (File) savedInstanceState.getSerializable("FILEDIALOG_FILE");
 		}
 	}
 
@@ -70,20 +63,13 @@ public class QuestionFragment extends FragmentTemplate {
 		getArguments().putSerializable("LAYOUT", getLay());
 
 		if (logic != null) {
-			getArguments().putInt("QUESTION_TURN", logic.getTurn());
-			getArguments().putStringArrayList("QUESTION_SELECTED", logic.getSelected());
+			getArguments().putSerializable("FILEDIALOG_FILE", file);
 		}
 	}
 
 	@Override
 	public void onStart() {
 		super.onStart();
-
-		if (selected != null) {
-			logic.setSelected(selected);
-		}
-
-		logic.setTurn(turn);
 	}
 
 	/**
