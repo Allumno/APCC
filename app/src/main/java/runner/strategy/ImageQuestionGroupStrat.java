@@ -1,4 +1,4 @@
-package runner;
+package runner.strategy;
 
 import items.GroupItems;
 import items.GroupManager;

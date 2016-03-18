@@ -1,4 +1,4 @@
-package runner;
+package runner.strategy;
 
 import java.util.Iterator;
 import java.util.Map;

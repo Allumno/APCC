@@ -6,6 +6,7 @@ import android.os.Message;
 import java.util.Iterator;
 import java.util.Map;
 
+import runner.strategy.SwipeStrategyAbstract;
 import variables.Actions;
 import items.GroupItems;
 import items.ItemInterface;

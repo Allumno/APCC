@@ -24,13 +24,13 @@ import fragments.LessonFragment;
 import fragments.QuestionFragment;
 import items.BackgroundView;
 import items.GroupManager;
-import runner.FileDialogGroupStrat;
-import runner.ImageQuestionGroupStrat;
-import runner.LangUnitStrat;
-import runner.LessonUnitStrat;
-import runner.QuestionLineStrat;
+import runner.strategy.FileDialogGroupStrat;
+import runner.strategy.ImageQuestionGroupStrat;
+import runner.strategy.LangUnitStrat;
+import runner.strategy.LessonUnitStrat;
+import runner.strategy.QuestionLineStrat;
 import runner.SwipeRunner;
-import runner.SwipeStrategyAbstract;
+import runner.strategy.SwipeStrategyAbstract;
 
 public class ExerciseLogic {
 	protected SwipeStrategyAbstract strat;
