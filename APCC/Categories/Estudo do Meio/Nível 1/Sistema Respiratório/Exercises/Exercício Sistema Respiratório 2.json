@@ -1,0 +1,16 @@
+{
+	"ID":"Exercício Sistema Respiratório",
+	"type":"question_text",
+	"Author":"JLA",
+	"turns":
+	[
+		{"question":"Qual é o principal orgão do sistema respiratório?",
+			"correct":"Os pulmões.",
+			"incorrect":[
+				"A faringe.",
+				"Os brônquios.",
+				"As fossas nasais."
+			]
+		}
+	]
+}

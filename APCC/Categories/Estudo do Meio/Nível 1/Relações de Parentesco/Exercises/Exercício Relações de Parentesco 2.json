@@ -1,0 +1,45 @@
+{
+	"ID":"Exercício Relações de Parentesco",
+	"type":"question_text_image",
+	"Author":"JLA",
+	"turns": [
+		{
+			"imgPath":"genograma.jpg",
+			"question":"A avó paterna da Rita é:",
+			"correct":{
+				"imgPath":"Lúcia.jpg",
+				"type":"IMAGE"
+			},
+			"incorrect":
+			[
+				{
+					"imgPath":"Carla.jpg",
+					"type":"IMAGE"
+				},
+				{
+					"imgPath":"Rita.jpg",
+					"type":"IMAGE"
+				}
+			]
+		},
+		{
+			"imgPath":"genograma.jpg",
+			"question":"O avô paterno da Rita é:",
+			"correct":{
+				"imgPath":"Álvaro.jpg",
+				"type":"IMAGE"
+			},
+			"incorrect":
+			[
+				{
+					"imgPath":"Sérgio.jpg",
+					"type":"IMAGE"
+				},
+				{
+					"imgPath":"Artur.jpg",
+					"type":"IMAGE"
+				}
+			]
+		}
+	]
+}

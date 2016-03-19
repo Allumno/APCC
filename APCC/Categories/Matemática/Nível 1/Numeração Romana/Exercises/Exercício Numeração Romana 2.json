@@ -1,0 +1,95 @@
+{
+	"ID":"Exercício Numeração Romana 2",
+	"type":"question_text_image",
+	"Author":"JLA",
+	"turns": [
+		{
+			"imgPath":"imagem 1.jpg",
+			"question":"Escreve o número representado na imagem:",
+			"correct":{
+				"text":"375",
+				"type":"TEXT"
+			},
+			"incorrect":
+			[
+				{
+					"text":"275",
+					"type":"TEXT"
+				},
+				{
+					"text":"650",
+					"type":"TEXT"
+				}
+			]
+		},
+		{
+			"imgPath":"imagem 2.jpg",
+			"question":"Escreve o número representado na imagem:",
+			"correct":{
+				"text":"368",
+				"type":"TEXT"
+			},
+			"incorrect":
+			[
+				{
+					"text":"253",
+					"type":"TEXT"
+				},
+				{
+					"text":"342",
+					"type":"TEXT"
+				},
+				{
+					"text":"343",
+					"type":"TEXT"
+				}
+			]
+		},
+		{
+			"imgPath":"imagem 3.jpg",
+			"question":"Escreve o número representado na imagem:",
+			"correct":{
+				"text":"353",
+				"type":"TEXT"
+			},
+			"incorrect":
+			[
+				{
+					"text":"984",
+					"type":"TEXT"
+				},
+				{
+					"text":"235",
+					"type":"TEXT"
+				},
+				{
+					"text":"45",
+					"type":"TEXT"
+				}
+			]
+		},
+		{
+			"imgPath":"imagem 4.jpg",
+			"question":"Escreve o número representado na imagem:",
+			"correct":{
+				"text":"685",
+				"type":"TEXT"
+			},
+			"incorrect":
+			[
+				{
+					"text":"587",
+					"type":"TEXT"
+				},
+				{
+					"text":"662",
+					"type":"TEXT"
+				},
+				{
+					"text":"784",
+					"type":"TEXT"
+				}
+			]
+		}
+	]
+}

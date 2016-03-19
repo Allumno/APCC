@@ -1,0 +1,17 @@
+{
+	"ID":"Exercício Sistema Respiratório",
+	"type":"language",
+	"Author":"JLA",
+	"imgPath":"pulmões.jpg",
+	"text":"Completa o seguinte esquema com os nomes dos órgãos por onde passa o ar inspirado:
+	
+	Fossas nasais --> Faringe --> Laringe --> Traqueia --> Brônquios --> Pulmões.
+	",
+	"options":[
+		{"correct":"Faringe", "incorrect":["Laringe", "Traqueia", "Brônquios", "Pulmões"]},
+		{"correct":"Laringe", "incorrect":["Faringe", "Traqueia", "Brônquios", "Pulmões"]},
+		{"correct":"Traqueia", "incorrect":["Faringe", "Laringe", "Brônquios", "Pulmões"]},
+		{"correct":"Brônquios", "incorrect":["Faringe", "Laringe", "Traqueia", "Pulmões"]},
+		{"correct":"Pulmões", "incorrect":["Faringe", "Laringe", "Traqueia", "Brônquios"]}
+	]
+}

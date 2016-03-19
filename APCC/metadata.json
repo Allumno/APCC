@@ -1,0 +1,61 @@
+{
+	"ID": "Joãozinho",
+	"type": "metadata",
+	"categories": [
+		{
+			"category": "Matemática",
+			"levels": [
+				{
+					"level": "Nível 1",
+					"assignments": [
+						{
+							"assignment":"Numeração Romana",
+							"headerPath":"cabeçalho.json",
+							"lessonsPath": [
+								"Lição Numeração Romana 1.json",
+								"Lição Numeração Romana 2.json"
+								],
+							"exercisesPath": [
+								"Exercício Numeração Romana 1.json",
+								"Exercício Numeração Romana 2.json"
+								]
+						}
+					]
+				}
+			]
+		},
+		{
+			"category": "Estudo do Meio",
+			"levels": [
+				{
+					"level": "Nível 1",
+					"assignments": [
+						{
+							"assignment":"Sistema Respiratório",
+							"headerPath":"cabeçalho.json",
+							"lessonsPath": [
+								"Lição Sistema Respiratório.json",
+								"Dicas Sistema Respiratório.json"
+								],
+							"exercisesPath": [
+								"Exercício Sistema Respiratório.json",
+								"Exercício Sistema Respiratório 2.json"
+								]
+						},
+						{
+							"assignment":"Relações de Parentesco",
+							"headerPath":"cabeçalho.json",
+							"lessonsPath": [
+								"Lição Relações de Parentesco.json"
+								],
+							"exercisesPath": [
+								"Exercício Relações de Parentesco.json",
+								"Exercício Relações de Parentesco 2.json"
+								]
+						}
+					]
+				}
+			]
+		}
+	]
+}

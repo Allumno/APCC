@@ -1,0 +1,27 @@
+{
+	"ID":"Exercício Numeração Romana 1",
+	"type":"question_text",
+	"Author":"JLA",
+	"turns":[
+		{
+			"question":
+			"Ofereceram à Sandra um livro que termina no capítulo XLII. Ela já leu até ao final do capítulo XXV. Quantos capítulos lhe faltam para acabar de ler o livro?",
+			"correct":"XVII",
+			"incorrect":[
+				"XII",
+				"IX",
+				"XLI"
+			]
+		},
+		{
+			"question":
+			"O pai da Inês nasceu no ano de MCMLIII. Qual o ano do seu nascimento em numeração árabe?",
+			"correct":"1953",
+			"incorrect":[
+				"1948",
+				"1962",
+				"1753"
+			]
+		}
+	]
+}

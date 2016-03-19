@@ -1,0 +1,36 @@
+{
+	"ID":"Exercício Relações de Parentesco",
+	"type":"question_text",
+	"Author":"JLA",
+	"turns":
+	[
+		{"question":"O pai da Rita chama-se:",
+			"correct":"Jorge",
+			"incorrect":[
+				"Joaquim",
+				"Álvaro"
+			]
+		},
+		{"question":"E a mãe da Rita chama-se:",
+			"correct":"Carla",
+			"incorrect":[
+				"Beatriz",
+				"Ana"
+			]
+		},
+		{"question":"A Lurdes e o Joaquim são os avós do:",
+			"correct":"Artur, Sérgio e Beatriz",
+			"incorrect":[
+				"Rita, Artur, Sérgio e Beatriz",
+				"Rita, Artur, Sérgio, Beatriz, Jorge, Rui e João"
+			]
+		},
+		{"question":"O Sérgio é genro dos...",
+			"correct":"Pais da Rita",
+			"incorrect":[
+				"Pais da Carla",
+				"Primos Beatriz"
+			]
+		}		
+	]
+}

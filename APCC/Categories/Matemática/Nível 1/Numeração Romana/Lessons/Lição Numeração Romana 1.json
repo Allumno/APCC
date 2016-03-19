@@ -1,0 +1,22 @@
+{
+	"ID":"Lição Numeração Romana",
+	"type":"lesson",
+	"Author":"JLA",
+	"imgPath":"numeração romana.jpg",
+	"text":"
+	Os símbolos I, X, C e M podem repetir-se até 3 vezes seguidas.
+	Os símbolos V, L e D podem aparecer, no máximo, uma vez.
+
+		I	>	1
+		II	>	2
+		III	>	3
+
+		X	->	10
+		XX	->	20
+		XXX	->	30
+
+	Um símbolo colocado à esquerda de outro de maior valor subtrai-se:
+
+		IV	->	5 - 1 = 4
+	"
+}

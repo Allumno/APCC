@@ -1,0 +1,23 @@
+{
+	"ID":"Lição Numeração Romana",
+	"type":"lesson",
+	"Author":"JLA",
+	"imgPath":"numeração romana.jpg",
+	"text":"
+	Só os símbolos I, X e C é que se podem subtrair e apenas aos dois símbolos maiores que vêm a seguir:
+
+		IV	->	4
+		IX	->	9
+
+		XL	->	40
+		XC	->	90
+
+		CD	->	400
+		CM	->	900
+
+	Um símbolo colocado à direita de outro de maior valor adiciona-se:
+
+		VI	->	5 + 1 = 6
+		VII	->	5 + 1 + 1 = 7
+	"
+}
